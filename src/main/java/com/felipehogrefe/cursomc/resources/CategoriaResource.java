@@ -22,11 +22,8 @@ public class CategoriaResource {
 		
 		Categoria obj = service.find(id);
 		
-		if(obj == null) {
-			return (ResponseEntity<?>) ResponseEntity.noContent();
-		}else {
-			return ResponseEntity.ok(obj);
-		}
+		return ResponseEntity.ok(obj);
+		
 	}
 	
 }
